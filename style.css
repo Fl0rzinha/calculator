@@ -1,23 +1,29 @@
 * {
-    padding: 0;
-    margin: 0;
     text-decoration: none;
     font-family: arial;
 }
 
+body {
+    background: linear-gradient(200deg, magenta, black);
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
 #calculadora {
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(31, 31, 31);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 7px;
 }
 
 #calculadora h1 { 
-    font-size: 20px;
+    font-size: 23px;
     color: white;
     text-align: center;
-    padding-bottom: 10px;
+    /* padding-bottom: 4px; */
 }
 
 .button {
@@ -25,6 +31,13 @@
     width: 50px;
     font-weight: 700;
     font-size: 20px;
+    border: none;
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(119, 119, 119);
 }
 
 #resultado {
@@ -32,12 +45,36 @@
     height: 25px;
     width: 200px;
     margin: auto;
+    margin-bottom: 5px;
 }
 
 #igual {
-    height: 101px;
+    height: 104px;
 }
 
 #zero {
-    width: 102px;
+    width: 104px;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    font-size: 20px;
+    font-weight: 500;
+    width: 97%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(189, 114, 114); */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    height: 50px;
+    color: rgb(132, 0, 255);
 }
