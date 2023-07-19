@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: arial;
+}
+
+#calculadora {
+    background-color: rgb(65, 65, 65);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#calculadora h1 { 
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#resultado {
+    background-color: white;
+    height: 25px;
+    width: 200px;
+    margin: auto;
+}
+
+#igual {
+    height: 101px;
+}
+
+#zero {
+    width: 102px;
+}
