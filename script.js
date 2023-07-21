@@ -30,6 +30,10 @@ function calcular() {
     // aqui declara a o id do html "resultado" como uma variável na função
     var resultado = document.getElementById('resultado').innerHTML;
 
-    // trasnforma o valor do espaço "resultado" em um calculo usando o "eval", faz isso usando a var "resultado"
-    document.getElementById('resultado').innerHTML = eval(resultado);
+    if (resultado) {
+        document.getElementById('resultado').innerHTML = eval(resultado);
+    }
+    else {
+        document.getElementById('resultado').innerHTML = "Nada a calcular...";
+    }
 }
